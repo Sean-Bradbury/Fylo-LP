@@ -1,0 +1,180 @@
+@media only screen and (max-width: 500px) {
+  .logo {
+    height: 25px;
+  }
+
+  .text-center-mobile {
+    text-align: center;
+  }
+
+  .container {
+    padding: 5% 10%;
+  }
+
+  #nav {
+    .nav {
+      .nav-links {
+        li a {
+          font-size: 0.7rem;
+        }
+      }
+    }
+  }
+
+  #header {
+
+    .header {
+      grid-template-columns: 1fr;
+      grid-template-areas:
+        'image'
+        'content';
+      grid-gap: 2rem;
+      margin-bottom: 10rem;
+
+      &-a {
+        grid-area: content;
+
+        .primary-heading {
+          width: 100%;
+          font-size: 1.6rem;
+        }
+
+        .lead {
+          width: 100%;
+        }
+
+        .form {
+
+          .input,
+          .btn {
+            width: 100%;
+            display: block;
+          }
+
+          .btn {
+            margin-left: 0;
+            margin-top: 0.5rem;
+          }
+        }
+
+
+      }
+
+      &-b {
+        margin-top: 3rem;
+        grid-area: image;
+      }
+    }
+  }
+
+  #main-content {
+    padding-bottom: 3rem;
+
+    .content {
+      grid-template-columns: 1fr;
+      grid-template-areas:
+        'image'
+        'content';
+
+      &-a {
+        grid-area: content;
+
+        .primary-heading {
+          width: 100%;
+          font-size: 1.1rem;
+          margin: 1rem 0;
+        }
+
+        p {
+          width: 100%;
+        }
+
+        .testimonial {
+          width: 100%;
+        }
+
+        .lead {
+          width: 100%;
+        }
+
+        .a-link {
+          margin: 1rem 0;
+        }
+
+      }
+
+      &-b {
+        margin-top: 3rem;
+        grid-area: image;
+      }
+    }
+  }
+
+  #early-access {
+    height: 100%;
+    padding: 3rem 1rem;
+
+    .early-access {
+      grid-template-columns: 1fr;
+
+      &-a {
+        .secondary-heading {
+          font-size: 1.1rem;
+        }
+      }
+
+      &-b {
+        .form {
+          position: relative;
+          top: 5px;
+
+          .input,
+          .btn {
+            width: 90%;
+            display: block;
+            margin: auto;
+          }
+
+          .btn {
+            position: relative;
+            left: 0px;
+            margin-top: 0.5rem;
+          }
+        }
+
+
+      }
+    }
+  }
+
+  #footer {
+    padding-top: 3rem;
+
+    .footer-content {
+      grid-template-columns: 1fr;
+      grid-gap: 1.5rem;
+      color: $lig;
+
+      .nav1,
+      .nav2 {
+        margin-left: 0;
+
+        li {
+          list-style: none;
+        }
+      }
+
+      .nav2 {
+        position: relative;
+        left: 0;
+      }
+
+      .social {
+        position: relative;
+        justify-self: center;
+      }
+    }
+
+
+  }
+}
